@@ -1,0 +1,126 @@
+<!-- SEAMUS! THIS IS THE CODE THAT SENDS CONSULTATION FORM SUBMISSIONS TO YOUR EMAIL. -->
+<?php 
+if(isset($_POST['submit'])){
+    $to = "pureform6@outlook.com"; // this is your Email address
+    $from = $_POST['senderEmail'];
+    $sender = $_POST['sender'];
+$senderPhone = $_POST['senderPhone'];
+$senderContact = $_Post['senderContact'];
+    $subject = "pure form Appointment Request";
+    $subject2 = "Click for more information";
+    $message = $sender . " wrote the following:" . "\n\n" . $_POST['senderMessage'];
+    $message2 = "Here is a copy of your message " . $sender . "\n\n" .     $_POST['senderMessage'];
+
+    $headers = "From:" . $from;
+    mail($to,$subject,$message,$headers);
+    
+    echo "Mail Sent. Thank you " . $sender . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+
+header("Location: {$_POST["https://webuyyourscrapcars.com/images/Thank-You-For-Contacting-Us.png"]}");
+?>
+
+
+<!-- WEBPAGE STARTS HERE-->
+<html>
+<head lang="en">
+
+<!--TASKBAR-->
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+
+<div class="nav">
+  <a class="links" href="#abouthere">About Us</a>
+  <a class="links" href="#contacthere">Contact Us</a> 
+  <!--<a class="links" href="#linkshere">Links</a>-->
+  <!--<a class="links" href="#galleryhere">Gallery</a>-->
+  <a class="phone1" href="@tel:+13477193825">347-719-3825</a>
+
+</div>
+
+<body class="side-background">
+
+<!--PURE FORM HEADER BOX-->
+  <div class="pure">
+   <h1>|  pure form  | <h1/> 
+<div class="homeandgarden">
+<p1>home and garden by natural design</p1> 
+<br><br><br>
+<p2> |&nbsp; decorative painting&nbsp;|&nbsp;woodwork&nbsp;|&nbsp;renovation&nbsp;|<br>|&nbsp;stonework&nbsp;|&nbsp;native gardens&nbsp;|</p2>
+  </div>
+</div>
+  
+<!--CONTACT REQUEST FORM-->
+    <div class="container">
+ <a id="contacthere"><h3>schedule a consultation</h3></a>
+  <form action="contact.php"
+ method="post">
+    <div class="flex-row">
+      <input type="text" id="name" name="sender" placeholder="Name">
+      <input type="email" id="email" name="senderEmail" placeholder="Email Address">
+      <input type="tel" id="phone" name="senderPhone" placeholder="Phone">
+    </div>
+    <div class="flex-row">
+     
+     <select type="dropdown" name="senderContact" placeholder="">
+        <option placeholder="Preferred Contact Method"> Preferred Contact Method</option>
+        <option value="bycall">I'd like to receive a call</option>
+        <option value="bytext">I'd like to receive a text</option>
+       <option value="byemail">I'd like to receive an email</option>
+      </select>
+    </div>
+    <div class="flex-row">
+     <textarea id="message" name="message" placeholder="Write your message here..." style="height:200px"></textarea>
+    </div>
+    <input type="submit" value="Submit">
+    </form></div>
+ <br>
+
+<!--ABOUT + PHONE BOX-->
+<div class="about-section">
+  <a id="abouthere"><h3>| about us |</h3></a>
+  <p>We look for projects that challenge and inspire  creative movement.   Honest simple spaces. Refreshing colors.  Decorative sheds, tea houses, playhouses. 
+<p>
+    Interior and exterior imptovements. Wood, stone,mud and paint. Pergolas and pavilions. Gazebos and guesthouses.  No project too large or small. No matter what the scope we will provide the attention your project demands to shine.  
+
+    
+    </p><p>
+    From start to finish we will help you to add that special touch to your rennovation project, making it not only a painless process, but a labor of love.
+  </p>
+  <p>Contact Information: </p>
+  <p> <a class="phone" href="@tel:+13477193825"> 347-719-3825</a> </p>
+</div>
+ <br><br><br><br><br><br><br><br>
+
+<!--GALLERY
+    <a id="galleryhere"></a>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://world.pulse.rs/wp-content/uploads/2015/11/Kumiko-Japanese-Woodcraft.jpg" alt="Kumiko">
+      <h4>Text</h4>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="https://cdn.fixr.com/cost_guide_pictures/drywall-installation-5d165fae45262.png" alt="Drywall">
+      <h4>Text</h4>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="https://www.homeimprovementwa.com/wp-content/uploads/2020/08/1598209143.jpg" alt="Painting" >
+      <h4>Text</h4>     
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="https://www.nbss.edu/cf_cloudflare/01/data/media/display/638.jpg?v=083117224518" alt="Woodworking" >
+      <h4>Text</h4>
+    </div>
+  </div>
+</div>
+ -->
+
+</body></head>
+</html> 
