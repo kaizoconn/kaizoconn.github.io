@@ -76,7 +76,7 @@ transition: 0.8s;
   padding: 15px;
   width:80%;
   max-width:800px;
-  margin:250px auto;
+  margin:150px auto;
   text-align: center;
 border-radius: 5px;
   background-color: rgba(255,255,255, 0.70);
@@ -84,7 +84,7 @@ border-radius: 5px;
 }
 h1 {
 text-align: center;
-font-size: 11vh; 
+font-size: 9vh; 
 font-weight: normal; /* Try this on any font that you think is a little too thick */
 ;}
 .homeandgarden {
@@ -93,10 +93,10 @@ font-size: 20px; /*Don't touch this*/
 }
 p1 {
 font-style: italic;
-font-size: 3.5vh;
+font-size: 3vh;
 }
 p2{
-font-size: 2.6vh;
+font-size: 2vh;
 }
 
 
