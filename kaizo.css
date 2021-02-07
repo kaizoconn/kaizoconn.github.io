@@ -278,6 +278,13 @@ h4 {
       padding-top: 200px;
   }
 }
+
+@media only screen and (max-width: 719px) {
+.h1 {
+     padding-top: 0;
+     height: 0;
+   }
+}
 @media
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) 
