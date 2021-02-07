@@ -1,4 +1,4 @@
-<!-- SEAMUS! THIS IS THE CODE THAT SENDS CONSULTATION FORM SUBMISSIONS TO YOUR EMAIL. -->
+<!-- SEAMUS! THIS IS THE CODE THAT SENDS CONSULTATION FORM SUBMISSIONS TO YOUR EMAIL. CAN'T USE PHP ON GITHUB, NEED TO CHANGE TO JS
 <?php 
 if(isset($_POST['submit'])){
     $to = "pureform6@outlook.com"; // this is your Email address
@@ -16,7 +16,7 @@ $senderContact = $_Post['senderContact'];
     
     echo "Mail Sent. Thank you " . $sender . ", we will contact you shortly.";
     // You can also use header('Location: thank_you.php'); to redirect to another page.
-    }
+    }-->
 
 header("Location: {$_POST["https://webuyyourscrapcars.com/images/Thank-You-For-Contacting-Us.png"]}");
 ?>
@@ -55,7 +55,7 @@ header("Location: {$_POST["https://webuyyourscrapcars.com/images/Thank-You-For-C
   </div>
 </div>
       
-<!--CONTACT REQUEST FORM-->
+<!--CONTACT REQUEST FORM CAN'T BE USED ON GITHUB, NEED TO CHANGE PHP TO JS
     <div class="container">
  <a id="contacthere"><h3>schedule consultation</h3></a>
   <form action="contact.php"
@@ -79,7 +79,7 @@ header("Location: {$_POST["https://webuyyourscrapcars.com/images/Thank-You-For-C
     </div>
     <input type="submit" value="Submit">
     </form></div>
- <br>
+ <br> -->
 
 <!--ABOUT + PHONE BOX-->
 <div class="about-section">
@@ -93,7 +93,8 @@ header("Location: {$_POST["https://webuyyourscrapcars.com/images/Thank-You-For-C
     From start to finish we will help you to add that special touch to your renovation project, making it not only a painless process, but a labor of love.
   </p>
   <p>Contact Information: </p>
-  <p> <a class="phone" href="@tel:+13477193825"> 347-719-3825</a> </p>
+  <p> <a class="phone" href="@tel:+13477193825"> 347-719-3825</a> </p> <br>
+    <p> <a class="email" href= "mailto: pureform6@outlook.com?subject = Feedback&body = pureform Message"> Send us an Email</a></p>
 </div>
  <br><br><br><br><br><br><br><br>
 
