@@ -98,10 +98,7 @@ font-size: 3.5vh;
 p2{
 font-size: 2.6vh;
 }
-p8{
-font-size: 2.6vh;
-font-style: bold;
-}
+
 
 
 
@@ -123,7 +120,11 @@ color: #000000;
 p {
 text-align: center;
 }
-
+p8{
+font-size: 2.6vh;
+font-style: bold;
+font-weight: 700;
+}
 
 
 
