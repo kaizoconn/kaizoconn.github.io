@@ -126,7 +126,7 @@ text-align: center;
 
 
 
-/* CONTACT REQUEST FORM */
+/* CONTACT REQUEST FORM CAN'T BE USED ON GITHUB, NEED TO CHANGE FROM PHP TO JS
 
 input[type=text],
 select,
@@ -184,7 +184,7 @@ display:block;
 .flex-row input:nth-child(3){
   flex-basis:150px;}
 
-
+*/
 
 
 
