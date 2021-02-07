@@ -27,6 +27,7 @@ background: rgba(0, 0, 0, .93); /* Seamus! This line of code dictates the color 
 a.links:link {
 justify-content: flex-left;
 color: #fafafa;
+font-size: 12px;
 text-decoration: none;
 padding: 20px;
 border-right: 2px solid #6c6c6c;
@@ -54,6 +55,7 @@ color: #fafafa;
 padding: 20px;
 border-left: 2px solid #6c6c6c;
 text-decoration: none;
+font-size: 15px;
 transition: 0.8s;
 }
 
