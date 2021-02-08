@@ -80,8 +80,6 @@ transition: 0.8s;
   max-width:800px;
   margin:150px auto;
   text-align: center;
-text-overflow: ellipsis;
- 
   white-space: nowrap;
   overflow: hidden;
   border-radius: 5px;
