@@ -34,7 +34,7 @@ transition: 0.5s;
 }
 
 a.links:hover {
-color: #000000;
+color: #fafafa;
 background-color: #333;
 transition: 0.5s;
 }
@@ -135,7 +135,7 @@ border-radius: 5px;
 ;}
 a.phone:link {
 font-weight: bold;
-font-size: 16px;
+font-size: 18px;
 text-decoration: none;
 padding: 20px;
 transition: 0.5s;
