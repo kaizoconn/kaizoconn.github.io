@@ -33,16 +33,6 @@ border-right: 2px solid #6c6c6c;
 transition: 0.5s;
 }
 
-a.links:hover {
-color: #ffffff;
-background-color: #333;
-transition: 0.5s;
-}
-
-a.links:visited {
-color: #ffffff;
-}
-
 a.links:active {
 color: #a8a8a8;
 transition: 0.5s;
