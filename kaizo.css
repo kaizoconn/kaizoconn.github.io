@@ -86,26 +86,18 @@ transition: 0.8s;
 }
 h1 {
   text-align: center;
-  font-size: 9vh; 
+  font-size: 50px; 
   font-weight: normal; /* Try this on any font that you think is a little too thick */
 ;}
-.homeandgarden {
+p6 {
   text-align: center;
   font-size: 20px; /*Don't touch this*/
-}
-p1 {
   font-style: italic;
   font-size: 3vh;
 }
 p2{
   font-size: 2vh;
 }
-
-
-
-
-
-
 
 /*MISCELLANEOUS FONT CSS*/
 
@@ -127,75 +119,6 @@ p8{
   font-style: bold;
   font-weight: 700;
 }
-
-
-
-
-
-/* CONTACT REQUEST FORM CAN'T BE USED ON GITHUB, NEED TO CHANGE FROM PHP TO JS
-
-input[type=text],
-select,
-textarea,
-input[type=email],
-input[type=number],
-input[type=tel] {
-  width: 100%;
-  padding: 12px;
-  border: transparent;
-  border-radius: 10px;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-input[type=submit] {
-  background-color: #555555;
-  color: white;
-  padding: 12px 20px;
-  border:  1px solid #414141;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.3s linear;
-}
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-.container {
-  top: 50%;
-  bottom: 50%;
-  padding: 20px;
-  width: device-width;
-  max-width:800px;
-  margin: 250px auto;
-border-radius: 5px;
-  background-color: rgba(255,255,255, 0.70);
-  box-shadow: 0px 0px 50px 0px;
-;}
-.flex-row{
-  display:flex;
-  justify-content:space-between;
-  align-content:center;
-  align-items:strech;
-  line-height:45px;
-}
-.flex-row input,
-.flex-row textarea,
-.flex-row select{
-  margin:5px;
-}
-input[type=submit]{
-margin:5px auto;
-display:block;
-}
-.flex-row input:nth-child(3){
-  flex-basis:150px;}
-
-*/
-
-
-
-
-
 
 /* ABOUT + PHONE BOX */
 
@@ -228,72 +151,6 @@ a.phone:active {
 color: #409741;
 }
 
- 
-
-
-
-/* GALLERY 
-
-.row {
-vertical-align: bottom;
-
-}
-.column {
-margin: 0;
-margin-bottom: -50px;
- float: right;
-  width: 23.7%;
-padding: 8px;
-
-}
-img {
-    float: center;
-    width:  100%;
-    height: 200px;
-object-fit: cover;
-border-radius: 3px;
-filter: saturate(1.5);
-}
-h4 {
-   font-style: italic;
-   text-align: center; 
-   background-color: rgba(255, 255, 255, 0.6);
-   border-radius: 25px;
-   box-shadow: 5px 5px 5px 0px;
-}
-*/
-
-
-
-
-
 /* ADJUSTMENTS FOR MOBILE/LAPTOP/TABLET SCREENS */
-@media (max-width: 576px) {
-  .pure .about-section .nav {
-      padding-top: 100px;
-  }
-}
-@media (max-width: 768px) {
-  .pure .about-section .nav {
-      padding-top: 200px;
-  }
-}
 
-@media only screen and (max-width: 719px) {
-.h1 {
-     padding-top: 0;
-     height: 0;
-   }
-}
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) 
-/* Background */
-@media only screen and (max-width: 767px) {
-  body {
-    
-background-position: center;
-background-repeat: repeat-y;
-background-size: cover; 
-background-color: #F5E5C9;
-  }
+
