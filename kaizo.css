@@ -33,6 +33,18 @@ border-right: 2px solid #6c6c6c;
 transition: 0.5s;
 }
 
+a.links:hover {
+color: #ffffff;
+}
+
+a.links:active{
+color: #ffffff;
+}
+
+a.links:visited{
+color:#a8a8a8;
+}
+
 a.phone1 {
 margin-left: auto;
 color: #ffffff;
