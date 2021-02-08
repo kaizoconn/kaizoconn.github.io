@@ -34,23 +34,23 @@ transition: 0.5s;
 }
 
 a.links:hover {
-color: #fafafa;
+color: #ffffff;
 background-color: #333;
 transition: 0.5s;
 }
 
 a.links:visited {
-color: #fafafa;
+color: #ffffff;
 }
 
 a.links:active {
-color: gray;
+color: #a8a8a8;
 transition: 0.5s;
 }
 
 a.phone1 {
 margin-left: auto;
-color: #fafafa;
+color: #ffffff;
 padding: 20px;
 border-left: 2px solid #6c6c6c;
 text-decoration: none;
@@ -59,7 +59,7 @@ transition: 0.8s;
 }
 
 a.phone1:hover {
-color: #4d4d4d;
+color: #a8a8a8;
 transition: 0.8s;
 }
 
