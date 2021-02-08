@@ -41,7 +41,7 @@ transition: 0.5s;
 }
 
 a.links:visited {
-color: gray;
+color: #000000;
 }
 
 a.links:active {
@@ -81,7 +81,7 @@ transition: 0.8s;
   margin:150px auto;
   text-align: center;
 text-overflow: ellipsis;
-display: block; 
+ 
   white-space: nowrap;
   overflow: hidden;
   border-radius: 5px;
