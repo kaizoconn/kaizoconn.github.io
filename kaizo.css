@@ -291,7 +291,7 @@ only screen and (min-device-pixel-ratio : 1.5)
 /* Background */
 @media only screen and (max-width: 767px) {
   body {
-    background-image: url(https://lh6.googleusercontent.com/-glvQnCET6t4/TXJtzvuRfbI/AAAAAAAAA0E/lE8_WpSUQ00/s1600/Bankei.jpg);
+    
 background-position: center;
 background-repeat: repeat-y;
 background-size: cover; 
