@@ -45,7 +45,7 @@ color: #fafafa;
 }
 
 a.links:active {
-color: #000000;
+color: gray;
 transition: 0.5s;
 }
 
