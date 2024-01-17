@@ -1,290 +1,209 @@
-/*-- -------------------------- -->
-<---           Hero             -->
-<--- -------------------------- -*/
+/*GENERAL BACKGROUND + FONT FAMILY*/
+html {
+  background: url(https://lh6.googleusercontent.com/-glvQnCET6t4/TXJtzvuRfbI/AAAAAAAAA0E/lE8_WpSUQ00/s1600/Bankei.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(1px);
+  font-family: 'Space Mono', monospace;
+;}
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #hero-1618 {
-    padding: var(--sectionPadding);
-    /* 200px - 300px - leaving extra space for the navigation */
-    padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
-    position: relative;
-    z-index: 1;
-  }
-  #hero-1618 .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* 60px - 180px */
-    gap: clamp(3.75rem, 13vw, 11.25rem);
-  }
-  #hero-1618 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: left;
-    width: 100%;
-    max-width: 48.75rem;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
-  }
-  #hero-1618 .cs-topper {
-    /* 13px - 16px */
-    font-size: clamp(0.8125rem, 1.5vw, 1rem);
-    line-height: 1.2em;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 0.25rem;
-    color: var(--primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    position: relative;
-  }
-  #hero-1618 .cs-chevron {
-    --chevronColor: var(--primary);
-    width: 3rem;
-    height: auto;
-  }
-  #hero-1618 .cs-title {
-    /* 39px - 61px */
-    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: inherit;
-    max-width: 100%;
-    margin: 0 0 2.5rem 0;
-    color: #fff;
-    position: relative;
-  }
-  #hero-1618 .cs-text {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 1.95vw, 1.25rem);
-    line-height: 1.5em;
-    text-align: inherit;
-    width: 100%;
-    /* 464px - 622px */
-    max-width: clamp(29rem, 60vw, 38.785rem);
-    margin: 0 0 2.5rem 0;
-    color: #fff;
-  }
-  #hero-1618 .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    margin: 0;
-    color: #fff;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-  }
-  #hero-1618 .cs-button-solid:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 0%;
-    background: #000;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width .3s;
-  }
-  #hero-1618 .cs-button-solid:hover:before {
-    width: 100%;
-  }
-  #hero-1618 .cs-card-group {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 16px - 20px */
-    gap: clamp(1rem, 2.3vw, 1.25rem);
-  }
-  #hero-1618 .cs-item {
-    width: 100%;
-    text-align: left;
-    list-style: none;
-    margin: 0;
-    /* 24px - 32px */
-    padding: clamp(1.5rem, 3vw, 2rem);
-    background-color: #fff;
-    box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
-    /* prevents padding from affecting height and width */
-    box-sizing: border-box;
-    grid-column: span 12;
-    grid-row: span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-  }
-  #hero-1618 .cs-icon {
-    width: 3rem;
-    height: auto;
-    margin: 0 0 1.5rem 0;
-  }
-  #hero-1618 .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-    line-height: 1.2em;
-    font-weight: bold;
-    text-align: inherit;
-    margin: 0 0 1rem 0;
-    color: var(--headerColor);
-  }
-  #hero-1618 .cs-item-text {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    max-width: 28.125rem;
-    margin: 0;
-    padding: 0;
-    color: var(--bodyTextColor);
-  }
-  #hero-1618 .cs-background {
-    width: 100%;
-    height: 55%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-  }
-  #hero-1618 .cs-background:before {
-    /* Overlay */
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: #111926;
-    opacity: .8;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    /* prevents the cursor from interacting with it */
-    pointer-events: none;
-  }
-  #hero-1618 .cs-background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    /* makes the top of the image start at the top of the parent */
-    object-position: top;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #hero-1618 {
-    padding-bottom: 0;
-  }
-  #hero-1618 .cs-container {
-    align-items: flex-start;
-  }
-  #hero-1618 .cs-content {
-    text-align: left;
-    margin-left: 0;
-    align-items: flex-start;
-  }
-  #hero-1618 .cs-item {
-    grid-column: span 4;
-  }
-  #hero-1618 .cs-background {
-    height: 87%;
-  }
-  #hero-1618 .cs-background:before {
-    background: linear-gradient(90deg, #111926 21.41%, rgba(17, 25, 38, 0.72) 34.98%, rgba(17, 25, 38, 0) 62.53%);
-    opacity: 1;
-  }
-}
-/* Large Desktop Parallax Effect - 100px */
-@media only screen and (min-width: 100rem) {
-  #hero-1618 .cs-background {
-    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/meeting7.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* creates the parallax effect */
-    background-attachment: fixed;
-  }
-  #hero-1618 .cs-background img {
-    display: none;
-  }
-}
-                                 --primary: #ff6a3e;
-    --primaryLight: #ffba43;
-    --secondary: #ffba43;
-    --secondaryLight: #ffba43;
-    --headerColor: #1a1a1a;
-    --bodyTextColor: #4e4b66;
-    --bodyTextColorWhite: #fafbfc;
-    /* 13px - 16px */
-    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-    /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-    --bodyFontSize: 1rem;
-    /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+
+
+
+
+/* TASK BAR CSS */
+div.nav {
+display: flex;
+position: fixed;
+top: 0px;
+left: 0px;
+right: 0px;
+width: 100%;
+background: rgba(0, 0, 0, .93); /* Seamus! This line of code dictates the color and opacity of the task bar. The final number in the line of code, currently .93, is the opacity. Move this around as you see fit. I think it's a little too heavy when fully opaque.*/
+;}
+
+a.links:link {
+justify-content: flex-left;
+color: #ffffff;
+font-size: 12px;
+text-decoration: none;
+padding: 20px;
+border-right: 2px solid #6c6c6c;
+transition: 0.5s;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+a.links:hover {
+color: #ffffff;
 }
 
-*, *:before, *:after {
-    /* prevents padding from affecting height and width */
-    box-sizing: border-box;
-}
-.cs-topper {
-    font-size: var(--topperFontSize);
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: inherit;
-    letter-spacing: .1em;
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 0.25rem;
-    display: block;
+a.links:active{
+color: #ffffff;
 }
 
-.cs-title {
-    font-size: var(--headerFontSize);
-    font-weight: 900;
-    line-height: 1.2em;
-    text-align: inherit;
-    max-width: 43.75rem;
-    margin: 0 0 1rem 0;
-    color: var(--headerColor);
-    position: relative;
+a.links:visited{
+color:#a8a8a8;
 }
 
-.cs-text {
-    font-size: var(--bodyFontSize);
-    line-height: 1.5em;
-    text-align: inherit;
-    width: 100%;
-    max-width: 40.625rem;
-    margin: 0;
-    color: var(--bodyTextColor);
+a.phone1 {
+margin-left: auto;
+color: #ffffff;
+padding: 20px;
+border-left: 2px solid #6c6c6c;
+text-decoration: none;
+font-size: 15px;
+transition: 0.8s;
 }
-                            
+
+a.phone1:hover {
+color: #a8a8a8;
+transition: 0.8s;
+}
+
+
+
+
+
+
+
+
+/*PURE FORM HEADER BOX*/
+.pure {
+  top: 20%;
+  bottom: 20%;
+  padding: 15px;
+  width:80%;
+  max-width:800px;
+  margin:150px auto;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(255,255,255, 0.85);
+  box-shadow: 0px 0px 50px 0px;
+}
+h1 {
+  text-align: center;
+  font-size: 50px; 
+  font-weight: normal; /* Try this on any font that you think is a little too thick */
+;}
+p6 {
+  text-align: center;
+  font-size: 20px; /*Don't touch this*/
+  font-style: italic;
+  font-size: 3vh;
+}
+p2{
+  font-size: 2vh;
+}
+
+/*MISCELLANEOUS FONT CSS*/
+
+h2{
+  text-align: center;
+  font-size: 30px;
+;}
+h3{
+  text-align: center;
+  font-size: 38px;
+  font-weight: normal;
+  color: #000000;
+;}
+p {
+  text-align: center;
+}
+p8{
+  font-size: 2.8vh;
+  font-style: bold;
+  font-weight: 700;
+}
+
+/* ABOUT + PHONE BOX */
+
+.about-section {
+  top: 20%;
+  bottom: 20%;
+  padding: 15px;
+  width:80%;
+  max-width:800px;
+  margin:0 auto;
+  text-align: center;
+border-radius: 5px;
+  background-color: rgba(255,255,255, 0.85);
+  box-shadow: 0px 0px 50px 0px;
+;}
+a.phone:link {
+font-weight: bold;
+font-size: 18px;
+text-decoration: none;
+padding: 20px;
+transition: 0.5s;
+}
+a.phone:hover {
+color: #147BAF;
+}
+a.phone:visited {
+color: #42011C;
+}
+a.phone:active {
+color: #409741;
+}
+
+/* ADJUSTMENTS FOR MOBILE/LAPTOP/TABLET SCREENS */
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(https://lh6.googleusercontent.com/-glvQnCET6t4/TXJtzvuRfbI/AAAAAAAAA0E/lE8_WpSUQ00/s1600/Bankei.jpg);
+background-position: center;
+background-repeat: repeat-y;
+background-size: cover; 
+background-color: #F5E5C9;
+  }
+
+  /*gallery*/
+      .container {
+    	display: block;
+    	max-width: 800px;
+    	margin: 0 auto;
+    	text-align: center;
+    }
+     
+    .small {
+    	width: 180px;
+    	height: auto;
+    	position: relative;
+    	margin: 3px;
+    	border-radius: 5px;
+    }
+     
+    .small:hover {
+    	-webkit-transform: scale(1.03, 1.03);
+    	transform: scale(1.03, 1.03);
+    }
+      .lightbox {
+    	display: none;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	z-index: 1;
+    	width: 100%;
+    	height: 100%;
+    	background: rgba(0, 0, 0, 0.7);
+    }
+      a div {
+    	position: relative;
+    	margin: auto auto;
+    	text-align: center;
+    }
+     
+    .lightbox:target {
+    	display: -webkit-box;
+    	display: flex;
+    }
+     
+    .container a {
+    	text-decoration: none;
+    }
+     
+    .container p {
+    	font-size: 20px;
+    	color: white;
+    	font-family: 'Poiret One';
+    }
