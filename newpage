@@ -1,71 +1,210 @@
-<!-- ============================================ -->
-<!--                  Reviews                     -->
-<!-- ============================================ -->
+                 
+/*GENERAL BACKGROUND + FONT FAMILY*/
+html {
+  background: url(https://lh6.googleusercontent.com/-glvQnCET6t4/TXJtzvuRfbI/AAAAAAAAA0E/lE8_WpSUQ00/s1600/Bankei.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(1px);
+  font-family: 'Space Mono', monospace;
+;}
 
-<section id="reviews-1611">
-    <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing7.jpg">
-            <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing7.jpg">
-            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/fishing7.jpg" alt="fishing" width="413" height="516">
-        </picture>
-        <div class="cs-content">
-            <span class="cs-topper">Testimonials</span>
-            <h2 class="cs-title">Thousands of Happy Fish Hunters</h2>
-            <p class="cs-text">
-                “Outstanding store for fishing accessories! Top-notch products, user-friendly website, and excellent customer service. They truly care about anglers and provide valuable tips. Highly recommended!”
-            </p>
-            <div class="cs-flex-group">
-                <picture class="cs-profile-wrapper">
-                    <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile3.png" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
-                </picture>
-                <span class="cs-name">
-                    Jenny Wilson
-                    <span class="cs-job">Fish Hunter</span>
-                </span>
-            </div>
-        </div>
-    </div>
-    <!--SVG Quotes-->
-    <svg class="cs-quotes" width="182" height="152" fill="none" preserveAspectRatio="none" viewBox="0 0 182 152" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="var(--quoteColor)"><path d="M41.75 152H0L33.315 0H100.1L41.75 152ZM123.651 152h-41.75L115.214 0H182l-58.349 152Z"/></g><defs><clipPath id="a-1611"><path fill="#fff" d="M0 0h182v152H0z"/></clipPath></defs></svg>
-    <picture class="cs-background">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/coast.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/coast.jpg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/coast.jpg" alt="coast" width="1280" height="568">
-    </picture>
-</section>
 
-<!-- ============================================ -->
-<!--                     CTA                      -->
-<!-- ============================================ -->
 
-<section id="cta-1611">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Subscribe</span>
-            <h2 class="cs-title">Subscribe Your Email for Newsletter & Promotion</h2>
-            <p class="cs-text">
-                Nulla dig nissimmi quis neque interdum. An Ohio man allegedly punched his lawyer in the face in court Tuesday upon finding out he was sentenced.
-            </p>
-            <form class="cs-form" name="Contact Form" method="post">
-                <input class="cs-input" type="email" id="cs-email-302-1611" name="find-us" placeholder="Email Address">
-                <button class="cs-button-solid cs-submit" type="submit">Subscribe Now</button>
-            </form>
-        </div>
-    </div>
-    <!--Background Image-->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/underwater.jpg">
-        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/underwater.jpg">
-        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/underwater.jpg" alt="water" width="1920" height="486" aria-hidden="true">
-    </picture>
-    <div class="cs-wrapper">
-        <img class="cs-fish cs-fish1" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/left-fish.svg" alt="fish" width="1920" height="486" aria-hidden="true">
-        <img class="cs-fish cs-fish1" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/right-fish.svg" alt="fish" width="1920" height="486" aria-hidden="true">
-    </div>
-</section>
-                                
+
+
+/* TASK BAR CSS */
+div.nav {
+display: flex;
+position: fixed;
+top: 0px;
+left: 0px;
+right: 0px;
+width: 100%;
+background: rgba(0, 0, 0, .93); /* Seamus! This line of code dictates the color and opacity of the task bar. The final number in the line of code, currently .93, is the opacity. Move this around as you see fit. I think it's a little too heavy when fully opaque.*/
+;}
+
+a.links:link {
+justify-content: flex-left;
+color: #ffffff;
+font-size: 12px;
+text-decoration: none;
+padding: 20px;
+border-right: 2px solid #6c6c6c;
+transition: 0.5s;
+}
+
+a.links:hover {
+color: #ffffff;
+}
+
+a.links:active{
+color: #ffffff;
+}
+
+a.links:visited{
+color:#a8a8a8;
+}
+
+a.phone1 {
+margin-left: auto;
+color: #ffffff;
+padding: 20px;
+border-left: 2px solid #6c6c6c;
+text-decoration: none;
+font-size: 15px;
+transition: 0.8s;
+}
+
+a.phone1:hover {
+color: #a8a8a8;
+transition: 0.8s;
+}
+
+
+
+
+
+
+
+
+/*PURE FORM HEADER BOX*/
+.pure {
+  top: 20%;
+  bottom: 20%;
+  padding: 15px;
+  width:80%;
+  max-width:800px;
+  margin:150px auto;
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(255,255,255, 0.85);
+  box-shadow: 0px 0px 50px 0px;
+}
+h1 {
+  text-align: center;
+  font-size: 50px; 
+  font-weight: normal; /* Try this on any font that you think is a little too thick */
+;}
+p6 {
+  text-align: center;
+  font-size: 20px; /*Don't touch this*/
+  font-style: italic;
+  font-size: 3vh;
+}
+p2{
+  font-size: 2vh;
+}
+
+/*MISCELLANEOUS FONT CSS*/
+
+h2{
+  text-align: center;
+  font-size: 30px;
+;}
+h3{
+  text-align: center;
+  font-size: 38px;
+  font-weight: normal;
+  color: #000000;
+;}
+p {
+  text-align: center;
+}
+p8{
+  font-size: 2.8vh;
+  font-style: bold;
+  font-weight: 700;
+}
+
+/* ABOUT + PHONE BOX */
+
+.about-section {
+  top: 20%;
+  bottom: 20%;
+  padding: 15px;
+  width:80%;
+  max-width:800px;
+  margin:0 auto;
+  text-align: center;
+border-radius: 5px;
+  background-color: rgba(255,255,255, 0.85);
+  box-shadow: 0px 0px 50px 0px;
+;}
+a.phone:link {
+font-weight: bold;
+font-size: 18px;
+text-decoration: none;
+padding: 20px;
+transition: 0.5s;
+}
+a.phone:hover {
+color: #147BAF;
+}
+a.phone:visited {
+color: #42011C;
+}
+a.phone:active {
+color: #409741;
+}
+
+/* ADJUSTMENTS FOR MOBILE/LAPTOP/TABLET SCREENS */
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(https://lh6.googleusercontent.com/-glvQnCET6t4/TXJtzvuRfbI/AAAAAAAAA0E/lE8_WpSUQ00/s1600/Bankei.jpg);
+background-position: center;
+background-repeat: repeat-y;
+background-size: cover; 
+background-color: #F5E5C9;
+  }
+
+  /*gallery*/
+      .container {
+    	display: block;
+    	max-width: 800px;
+    	margin: 0 auto;
+    	text-align: center;
+    }
+     
+    .small {
+    	width: 180px;
+    	height: auto;
+    	position: relative;
+    	margin: 3px;
+    	border-radius: 5px;
+    }
+     
+    .small:hover {
+    	-webkit-transform: scale(1.03, 1.03);
+    	transform: scale(1.03, 1.03);
+    }
+      .lightbox {
+    	display: none;
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	z-index: 1;
+    	width: 100%;
+    	height: 100%;
+    	background: rgba(0, 0, 0, 0.7);
+    }
+      a div {
+    	position: relative;
+    	margin: auto auto;
+    	text-align: center;
+    }
+     
+    .lightbox:target {
+    	display: -webkit-box;
+    	display: flex;
+    }
+     
+    .container a {
+    	text-decoration: none;
+    }
+     
+    .container p {
+    	font-size: 20px;
+    	color: white;
+    	font-family: 'Poiret One';
+    }
