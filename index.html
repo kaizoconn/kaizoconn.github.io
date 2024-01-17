@@ -1,60 +1,126 @@
-:root {
-    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
-    --primary: #ff6a3e;
-    --primaryLight: #ffba43;
-    --secondary: #ffba43;
-    --secondaryLight: #ffba43;
-    --headerColor: #1a1a1a;
-    --bodyTextColor: #4e4b66;
-    --bodyTextColorWhite: #fafbfc;
-    /* 13px - 16px */
-    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
-    /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
-    --bodyFontSize: 1rem;
-    /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-}
+<html>
+<head lang="en">
+   <link href="http://kaizoconn.github.io/kaizo.css" type="text/css" rel="stylesheet">  
+    </head>
+    <head>
 
-body {
-    margin: 0;
-    padding: 0;
-}
+<!--TASKBAR-->
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 
-*, *:before, *:after {
-    /* prevents padding from affecting height and width */
-    box-sizing: border-box;
-}
-.cs-topper {
-    font-size: var(--topperFontSize);
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: inherit;
-    letter-spacing: .1em;
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 0.25rem;
-    display: block;
-}
+<div class="nav">
+  <a class="links" href="#abouthere">About Us</a>
+  <a class="links" href="#abouthere">Contact Us</a> 
+  <a class="phone1" href="tel:347-719-3825">347-719-3825</a>
 
-.cs-title {
-    font-size: var(--headerFontSize);
-    font-weight: 900;
-    line-height: 1.2em;
-    text-align: inherit;
-    max-width: 43.75rem;
-    margin: 0 0 1rem 0;
-    color: var(--headerColor);
-    position: relative;
-}
+</div>
+</head>
+    <head>
 
-.cs-text {
-    font-size: var(--bodyFontSize);
-    line-height: 1.5em;
-    text-align: inherit;
-    width: 100%;
-    max-width: 40.625rem;
-    margin: 0;
-    color: var(--bodyTextColor);
-}
-                            
+<body class="side-background">
+
+<!--PURE FORM HEADER BOX-->
+  <div class="pure">
+   <h1>|  pure form  | </h1> 
+<p6>home and garden by natural design</p6> 
+<br><br><br>
+<p2> |&nbsp; decorative painting&nbsp;|&nbsp;woodwork&nbsp;|&nbsp;renovation&nbsp;|<br>|&nbsp;stonework&nbsp;|&nbsp;native gardens&nbsp;|</p2>
+     </div>
+
+      
+<!--ABOUT + PHONE BOX-->
+<div class="about-section">
+  <a id="abouthere"><h3>| about us |</h3></a>
+  <p>We look for projects that challenge and inspire  creative movement. <br>  Honest simple spaces. Refreshing colors. Oaken bookcases. Decorative sheds, tea houses, playhouses. 
+<p>
+    Interior and exterior improvements. Wood, stone, mud and paint. <br> Pergolas and pavilions. Gazebos and guesthouses. No project too large or small. 
+<br>No matter what the scope we will provide the attention your project demands to shine.  
+
+    
+    </p><p>
+    From start to finish we will help you to add that special touch to your renovation project, making it not only a painless process, but a labor of love.
+  </p>
+  <p8>Contact Information: </p8>
+  <p> <a class="phone" href="tel:347-719-3825">347-719-3825</a> </p>
+  <!--<p><a class="email" href= "mailto:pureform6@outlook.com"> Send us an Email</a></p> --> 
+</div>
+ <br><br><br><br><br><br><br><br>
+ <!--<!--gallery-->
+    <div class="container">
+    <!-- Thumbnails -->
+       <a href="#img1"> 
+       <img class="small" src="img/image-1.jpg">
+       </a>
+       <a href="#img2"> 
+       <img class="small" src="img/image-2.jpg">
+       </a>
+       <a href="#img3"> 
+       <img class="small" src="img/image-3.png">
+       </a>
+       <a href="#img4"> 
+       <img class="small" src="img/image-4.jpg">
+       </a>
+       <a href="#img5"> 
+       <img class="small" src="img/image-5.jpg">
+       </a>
+       <a href="#img6"> 
+       <img class="small" src="img/image-6.jpg">
+       </a>
+       <a href="#img7"> 
+       <img class="small" src="img/image-7.jpg">
+       </a>
+       <a href="#img8"> 
+       <img class="small" src="img/image-1.jpg">
+       </a>
+      
+     <!--Lightboxes-->
+       <a href="#_" class="lightbox" id="img1">
+          <div>
+             <img src="https://github.com/kaizoconn/pics/blob/master/doorway.jpg?raw=true"/> 
+             <p> Exteriors </p>
+          </div>
+       </a>
+       <a href="#_" class="lightbox" id="img2">
+          <div>
+             <img src="https://github.com/kaizoconn/pics/blob/master/housepaint.jpg?raw=true"/> 
+             <p> The Racing</p>
+          </div>
+       </a>
+       <a href="#_" class="lightbox" id="img3">
+          <div>
+             <img src="https://github.com/kaizoconn/pics/blob/master/shelf.jpg?raw=true"/> 
+             <p> The Light </p>
+          </div>
+       </a>
+       <a href="#_" class="lightbox" id="img4">
+          <div>
+             <img src="https://github.com/kaizoconn/pics/blob/master/stairs1.jpg?raw=true"/> 
+             <p> Cute Bird</p>
+          </div>
+       </a>
+       <a href="#_" class="lightbox" id="img5">
+          <div>
+             <img src="img/https://github.com/kaizoconn/pics/blob/master/crown.jpg?raw=true"/> 
+             <p> The Car</p>
+          </div>
+       </a>
+       <a href="#_" class="lightbox" id="img6">
+          <div>
+             <img src="img/image-6.jpg"/> 
+             <p> The Fox</p>
+          </div>
+       </a>
+       <a href="#_" class="lightbox" id="img7">
+          <div>
+             <img src="img/image-7.jpg"/> 
+             <p> The War</p>
+          </div>
+       </a>
+       <a href="#_" class="lightbox" id="img8">
+          <div>
+             <img src="img/image-1.jpg"/> 
+             <p> The House</p>
+          </div>
+       </a>
+    </div>-->
+     </body></head>
+</html> 
